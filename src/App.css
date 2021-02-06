@@ -1,0 +1,14 @@
+/*Property applies for everything in the body -- which is everything lol */
+body{
+  --twitter-color: #50b7f5; /*Creates a variable that contains the twitter color, so we don't need to keep typing in the code*/
+  --twitter-background: #e6ecf0;
+}
+
+.app{
+  display: flex;
+  height: 100vh; /*Allows the component to use the entire height. */
+  max-width: 1300px; /*Creates a padding on the sides */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}

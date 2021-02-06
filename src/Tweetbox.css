@@ -1,0 +1,42 @@
+.tweetBox{
+    padding: 10px;
+    border-bottom: 8px solid var(--twitter-background);
+}
+
+.tweetBox_input{
+    display: flex;
+}
+
+.tweetBox_input{
+    display: flex;
+}
+
+.tweetBox > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.tweetBox_input > input{
+    border: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.tweetBox_button{
+    background-color: var(--twitter-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900  !important;
+    text-transform: capitalize !important; /*Makes the text regular case, instead of all uppercase by default */
+    width: 80px !important;
+    border-radius: 30px !important;
+    height: 40px !important;
+    margin-top: 20px !important;
+    margin-left: auto !important;
+}
+
+.tweetbox_inputImage{
+    border: none;
+    padding: 10px;
+    margin-left: 60px;
+}

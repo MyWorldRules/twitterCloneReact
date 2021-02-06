@@ -1,0 +1,35 @@
+.feed{
+    flex:0.4;
+    border-right: 1px solid var(--twitter-background);
+    /*min-width: fit-content;*/
+    overflow-y: scroll;
+}
+
+.feed_header{
+    /*Enables the "home" header to stay in place and not move */
+    position: sticky;
+    
+    top:0;
+    /*Covers up the text that scrolls under */
+    background-color: white;
+    z-index: 100;
+    /*Creates a border box around the home header */
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+}
+
+.feed_header > h2{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/*Remove the scroll bar for Chrome, Safari and Opera */
+.feed::-webkit-scrollbar{
+    display: none;
+}
+
+/*Removes the scroll bar for IE, Edge and Firefox*/
+.feed{
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+}
