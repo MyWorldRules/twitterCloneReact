@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import './Tweetbox.css'
 import {Avatar, Button} from "@material-ui/core"
 import db from "./firebase.js"
+import firebase from "firebase";
 
 function Tweetbox(){
     const [tweetMessage, setTweetMessage] = useState("");
@@ -11,12 +12,13 @@ function Tweetbox(){
         //Whenever you submit a form, it auto reloads the page. We want to stop that
         e.preventDefault();
         db.collection("posts").add({
-            displayName: "Tarun",
-            userName: "@hi",
+            displayName: "Tarun Ravi",
+            userName: "@My_World_Rules",
             verified: false,
             text: tweetMessage,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             image: tweetImage,
-            avatar: "https://media3.s-nbcnews.com/j/newscms/2021_03/3444361/210122-donald-trump-al-1405_c94071c5009019d8b6a364c44dfe16f0.focal-758x379.jpg"
+            avatar: "https://lh3.googleusercontent.com/ogw/ADGmqu_OmKZkvhI0lsrcZJhwo3f5DsXqgHnf9on7xS3IWPE=s64-c-mo"
         })
 
         setTweetMessage("");

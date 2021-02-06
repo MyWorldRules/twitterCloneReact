@@ -12,3 +12,10 @@ body{
   margin-right: auto;
   padding: 0 10px;
 }
+
+@media screen and (max-width: 1265px){
+  .app{
+    padding: 0 0px;
+  }
+
+}

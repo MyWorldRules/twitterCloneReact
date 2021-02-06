@@ -8,7 +8,7 @@ function Feed(){
     
     //Whenever the firebase database changes, it runs this method
     useEffect(() => {
-        db.collection("posts").onSnapshot((snapshot) =>
+        db.collection("posts").orderBy("timestamp", "desc").onSnapshot((snapshot) =>
             //Loops through all the posts and adds the data into an array
           setPosts(snapshot.docs.map((doc) => doc.data()))
         );

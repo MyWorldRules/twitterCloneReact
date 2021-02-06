@@ -21,9 +21,26 @@
 
 .sidebar{
     border-right: 1px solid var(--twitter-background); 
-    flex: 0.3; /*Allows the side bar to use 30% of the screen*/
+    flex: 0.2; /*Allows the side bar to use 30% of the screen*/
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
+
+@media screen and (max-width: 1265px){
+    .sidebar{
+        flex: 0.01 !important; 
+        padding-left: auto !important;
+        padding-right: auto !important;
+    }
+    .sidebar_TwitterIcon{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .sidebar_tweet{
+        display: none !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
